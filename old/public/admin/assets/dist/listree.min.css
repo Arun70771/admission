@@ -1,0 +1,64 @@
+.listree-submenu-heading{
+        cursor: pointer;
+    font-size: 17px;
+    color: #333;
+    font-weight: 500;
+    display: flex;
+    
+}
+ul.listree{
+    list-style: none;
+    padding: 0;
+    margin: 0;}
+ul.listree-submenu-items{list-style:none;border-left:none;white-space:nowrap;margin-right:4px;padding-left:38px}
+div.listree-submenu-heading.collapsed:before{
+    content: "+";
+    font-size: 28px;
+    color: #333;
+    font-weight: 700;
+    line-height: 18px;
+    margin-right: 10px;
+    
+}
+div.listree-submenu-heading.expanded:before{
+    content:"-";
+        font-size: 28px;
+    color: #333;
+    font-weight: 700;
+    line-height: 18px;
+    margin-right: 10px;
+    
+}
+.scrollable-menu{height:auto;max-width:800px;overflow-y:hidden}
+
+
+ul.listree>li {
+    word-wrap: break-word;
+    background: #fff!important;
+    background-clip: border-box;
+    border: 0 solid transparent;
+    box-shadow: -1px -1px 3px 0px rgb(154 154 204 / 6%);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px;
+    min-width: 0;
+    position: relative;
+    padding: 12px;
+    border: 1px solid #f3f3f3;
+    border-radius: 3px;
+}
+
+
+ul ul.listree-submenu-items  {
+padding-left: 21px;
+}
+ul.listree-submenu-items li .listree-submenu-heading {
+    cursor: pointer;
+    font-size: 15px;
+    color: #333;
+    font-weight: 500;
+    display: flex;
+    background: #f4f9ff;
+    padding: 8px 10px;
+    margin-top: 5px;
+}

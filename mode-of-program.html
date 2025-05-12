@@ -1,0 +1,339 @@
+@extends('web.layouts.main')
+@section('content')
+
+        <div class="container mb-4">
+            <div class="row mt-3">
+                <div
+                    class="col-md-12 d-flex justify-content-between justify-content-md-end align-items-center"
+                >
+                    <button class="toggle-btn" onclick="toggleSidebar()">
+                        ☰ Menu
+                    </button>
+                    <div class="loged-in-user rounded">
+                        <p><strong>Name</strong>: Mohit Aggarwal</p>
+                        <p><strong>Application Number:</strong>SAU007</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Sidebar -->
+                @include('web.include.nav')
+
+                <!-- Main Content -->
+                <main class="col-md-8 ms-sm-auto col-lg-9 ps-md-4 mt-4">
+                    <div class="card">
+                        <div class="card-header fs-6 text-white">
+                            <strong>Mode of Admission</strong>
+                        </div>
+<<<<<<<< HEAD:resources/views/web/mode-of-admissions.blade.php
+                        <form class="p-4" action="{{url('educational-details')}}">
+========
+                        <form class="p-4" action="educational-details.html">
+>>>>>>>> 4c5322c61f2cffa9addf5a9a2aad32d716d81de1:mode-of-program.html
+                            <div class="row">
+                                <!-- Programme Betchlors Name Dropdown -->
+                                <div class="col-md-6 mb-3 order-0">
+                                    <label class="form-label"
+                                        >Select Programme
+                                        <span class="text-danger"
+                                            >*</span
+                                        ></label
+                                    >
+                                    <select
+                                        class="form-control"
+                                        id="programme"
+                                        onchange="updateModeOfAdmission()"
+                                        
+                                    >
+                                        <option value="">
+                                            Select Programme
+                                        </option>
+                                        <option value="bachelors">
+                                            Bachelors
+                                        </option>
+                                        <option value="masters">Masters</option>
+                                        <option value="phd">PhD</option>
+                                        <option value="executivePhd">
+                                            Executive PhD
+                                        </option>
+                                    </select>
+                                </div>
+
+                                <!-- Dropdowns for Mode of Admission for each Programme -->
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label"
+                                        >Select Mode of Admission
+                                        (Bachelors)</label
+                                    >
+                                    <select
+                                        class="form-control"
+                                        id="bachelors-mode-of-admission"
+                                    >
+                                        <option value="">
+                                            Select Mode of Admission
+                                        </option>
+                                        <option value="jee-mains">
+                                            JEE Mains
+                                        </option>
+                                        <option
+                                            value="national-eligibility-test"
+                                        >
+                                            National Eligibility Test
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <!-- Programme Masters Name Dropdown -->
+                                <div class="col-md-6 mb-3 order-0">
+                                    <label class="form-label"
+                                        >Select Programme
+                                        <span class="text-danger"
+                                            >*</span
+                                        ></label
+                                    >
+                                    <select
+                                        class="form-control"
+                                        id="programme"
+                                        onchange="updateModeOfAdmission()"
+                                        
+                                    >
+                                        <option value="">
+                                            Select Programme
+                                        </option>
+                                        <option value="bachelors">
+                                            Bachelors
+                                        </option>
+                                        <option value="masters">Masters</option>
+                                        <option value="phd">PhD</option>
+                                        <option value="executivePhd">
+                                            Executive PhD
+                                        </option>
+                                    </select>
+                                </div>
+
+                                <!-- Dropdowns for Mode of Admission for each Programme -->
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label"
+                                        >Select Mode of Admission
+                                        (Masters)</label
+                                    >
+                                    <select
+                                        class="form-control"
+                                        id="masters-mode-of-admission"
+                                    >
+                                        <option value="">
+                                            Select Mode of Admission
+                                        </option>
+                                        <option value="cuet">CUET</option>
+                                        <option value="cat">CAT</option>
+                                        <option value="gate">GATE</option>
+                                        <option
+                                            value="national-eligibility-test"
+                                        >
+                                            National Eligibility Test
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <!-- Programme phd Name Dropdown -->
+                                <div class="col-md-6 mb-3 order-0">
+                                    <label class="form-label"
+                                        >Select Programme
+                                        <span class="text-danger"
+                                            >*</span
+                                        ></label
+                                    >
+                                    <select
+                                        class="form-control"
+                                        id="programme"
+                                        onchange="updateModeOfAdmission()"
+                                        
+                                    >
+                                        <option value="">Programme</option>
+                                        <option value="bachelors">
+                                            Bachelors
+                                        </option>
+                                        <option value="masters">Masters</option>
+                                        <option value="phd">PhD</option>
+                                        <option value="executivePhd">
+                                            Executive PhD
+                                        </option>
+                                    </select>
+                                </div>
+
+                                <!-- Dropdowns for Mode of Admission for each Programme -->
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label"
+                                        >Select Mode of Admission (PhD)</label
+                                    >
+                                    <select
+                                        class="form-control"
+                                        id="phd-mode-of-admission"
+                                    >
+                                        <option value="">
+                                            Select Mode of Admission
+                                        </option>
+                                        <option value="ugc-net-csir-jrf">
+                                            UGC NET/CSIR - JRF
+                                        </option>
+                                        <option
+                                            value="national-fellowship-tests"
+                                        >
+                                            National fellowship tests in
+                                            different SAARC countries on the
+                                            basis of their respective National
+                                            Entrance Tests
+                                        </option>
+                                        <option value="funded-by-government">
+                                            Funded by any Government agency to
+                                            pursue PhD
+                                        </option>
+                                        <option value="salaried-with-leave">
+                                            salaried and can get a leave from my
+                                            organization for at least the period
+                                            until the course work is completed
+                                        </option>
+                                        <option value="executive-phd">
+                                            Executive PhD
+                                        </option>
+                                        <option value="any-other">
+                                            Any Other
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <!-- any other -->
+                                <div class="col-md-6 mb-3 order-0">
+                                    <label class="form-label"
+                                        >Any Other(Please specify)</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="any-other"
+                                        placeholder="Enter Score of the relevant National Level Test"
+                                    />
+                                </div>
+                            </div>
+                            <!-- Submit Button -->
+                            <div class="col-12 text-center mt-3">
+                                <a
+                                    href="choose-programs.html"
+                                    class="btn btn-danger"
+                                >
+                                    Previous
+                                </a>
+                                <button type="submit" class="btn btn-primary">
+                                    Save & Next
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <!-- Toast Notification -->
+        <div class="toast-container position-fixed top-0 end-0 p-3">
+            <div
+                id="courseToast"
+                class="toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+            >
+                <div class="toast-header bg-danger text-white">
+                    <strong class="me-auto">Course Selection</strong>
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="toast"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div class="toast-body fw-bold">
+                    You can only select up to 2 courses.
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-dark text-white py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="images/sau_log.png" alt="Logo" width="150" />
+                        <p class="mt-2">Your Company Tagline</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-white text-decoration-none"
+                                    >Home</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-white text-decoration-none"
+                                    >About</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-white text-decoration-none"
+                                    >Services</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-white text-decoration-none"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Follow Us</h5>
+                        <a href="#" class="text-white me-3"
+                            ><i class="bi bi-facebook"></i
+                        ></a>
+                        <a href="#" class="text-white me-3"
+                            ><i class="bi bi-twitter"></i
+                        ></a>
+                        <a href="#" class="text-white me-3"
+                            ><i class="bi bi-instagram"></i
+                        ></a>
+                        <a href="#" class="text-white"
+                            ><i class="bi bi-linkedin"></i
+                        ></a>
+                    </div>
+                </div>
+                <hr class="border-light" />
+                <p class="text-center mb-0">
+                    &copy; 2025 Your Company. All Rights Reserved.
+                </p>
+            </div>
+        </footer>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            function toggleSidebar() {
+                const sidebar = document.getElementById("sidebar");
+                const body = document.body;
+                sidebar.classList.toggle("show");
+                // body.classList.toggle("sidebar-open");
+            }
+        </script>
+@endsection

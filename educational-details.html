@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Bootstrap demo</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+        <!-- Bootstrap Icons CDN -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+        />
+
+        <link rel="stylesheet" href="css/custom.css" />
+    </head>
+
+    <body>
+        <header class="header-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="logo-wrapper">
+                            <img
+                                src="images/sau_log.png"
+                                class="sau-logo"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="header-title text-center">
+                            <h1>SOUTH ASIAN UNIVERSITY</h1>
+                            <h2>A University established by SAARC Nations</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="logo-wrapper">
+                            <img
+                                src="images/saarc_logo.png"
+                                class="saarc-logo"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid shadow p-0">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container">
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div
+                            class="collapse navbar-collapse"
+                            id="navbarSupportedContent"
+                        >
+                            <ul
+                                class="navbar-nav me-auto mb-2 mb-lg-0 d-flex w-100"
+                            >
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link active"
+                                        aria-current="page"
+                                        href="#"
+                                        >Dashboard</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        href="#"
+                                        role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                    >
+                                        Dropdown
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Action</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Another action</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Something else here</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item ms-lg-auto ms-md-0">
+                                    <a class="btn btn-danger"
+                                        ><i class="bi bi-box-arrow-in-left"></i>
+                                        Logout</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="container mb-4">
+            <div class="row mt-3">
+                <div
+                    class="col-md-12 d-flex justify-content-between justify-content-md-end align-items-center"
+                >
+                    <button class="toggle-btn" onclick="toggleSidebar()">
+                        ☰ Menu
+                    </button>
+                    <div class="loged-in-user rounded">
+                        <p><strong>Name</strong>: Mohit Aggarwal</p>
+                        <p><strong>Application Number:</strong>SAU007</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Sidebar -->
+                <nav id="sidebar" class="col-md-4 col-lg-3 sidebar d-md-block">
+                    <button class="close-btn" onclick="toggleSidebar()">
+                        &times;
+                    </button>
+                    <div class="sidebar-item mb-4">
+                        <div class="card">
+                            <div class="card-header text-white">
+                                <strong>Available Services</strong>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <i
+                                        class="bi bi-check-circle-fill text-dark"
+                                    ></i>
+                                    <a href="#" class="text-decoration-none">
+                                        Application Form</a
+                                    >
+                                </li>
+                                <li class="list-group-item">
+                                    <i
+                                        class="bi bi-check-circle-fill text-dark"
+                                    ></i>
+                                    <a href="#" class="text-decoration-none">
+                                        Choose Programme and Course</a
+                                    >
+                                </li>
+                                <li class="list-group-item">
+                                    <i
+                                        class="bi bi-check-circle-fill text-dark"
+                                    ></i>
+                                    <a href="#" class="text-decoration-none">
+                                        Mode of Admission</a
+                                    >
+                                </li>
+                                <li class="list-group-item">
+                                    <i
+                                        class="bi bi-check-circle-fill text-dark"
+                                    ></i>
+                                    <a href="#" class="text-decoration-none">
+                                        Educational Details</a
+                                    >
+                                </li>
+                                <li class="list-group-item">
+                                    <i
+                                        class="bi bi-check-circle-fill text-dark"
+                                    ></i>
+                                    <a href="#" class="text-decoration-none">
+                                        Upload Documents</a
+                                    >
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-upload text-dark"></i>
+                                    <a href="#" class="text-decoration-none">
+                                        Preview & Final Submit
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-credit-card text-dark"></i>
+                                    <a href="#" class="text-decoration-none">
+                                        Pay Registration Fee</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-item mb-4">
+                        <div class="card">
+                            <div class="card-header text-white">
+                                <strong>Verify Email Id & Mobile Number</strong>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <i
+                                        class="bi bi-check-circle-fill text-dark"
+                                    ></i>
+                                    <a href="#" class="text-decoration-none">
+                                        Mobile Number Verified</a
+                                    >
+                                </li>
+                                <li class="list-group-item">
+                                    <i
+                                        class="bi bi-check-circle-fill text-dark"
+                                    ></i>
+                                    <a href="#" class="text-decoration-none">
+                                        Email Id Verified</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-item mb-4">
+                        <div class="card">
+                            <div class="card-header text-white">
+                                <strong>Contact Us</strong>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <i class="bi bi-envelope text-dark"></i>
+                                    <a href="#" class="text-decoration-none">
+                                        technical@sau.int</a
+                                    >
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-envelope text-dark"></i>
+                                    <a href="#" class="text-decoration-none">
+                                        admission@sau.int</a
+                                    >
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-phone text-dark"></i>
+                                    <a href="#" class="text-decoration-none">
+                                        011-35656600</a
+                                    >
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-geo text-dark"></i>
+                                    <a href="#" class="text-decoration-none">
+                                        Rajpur Road, Maidan Garhi, <br />New
+                                        Delhi 110068</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Main Content -->
+                <main class="col-md-8 ms-sm-auto col-lg-9 ps-md-4 mt-4">
+                    <div class="card">
+                        <div class="card-header fs-6 text-white">
+                            <strong>Educational Details</strong>
+                        </div>
+                        <form class="p-4" action="upload-documents.html">
+                            <table class="table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" width="5%">#</th>
+                                        <th scope="col" width="30%">
+                                            Name of the Degree
+                                        </th>
+                                        <th scope="col" width="35%">
+                                            Board/University
+                                        </th>
+                                        <th scope="col" width="40%">
+                                            Percentage <br />
+                                            <span style="font-size: 0.6rem"
+                                                >(in case of CGPA, convert it to
+                                                percentage using the conversion
+                                                formula)</span
+                                            >
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody id="table-body">
+                                    <tr>
+                                        <td scope="row" data-label="SNO.">1</td>
+                                        <td data-label="Name of the Degree">
+                                            10th
+                                        </td>
+                                        <td data-label="Board/University">
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                name="board_university_10th"
+                                                placeholder="Required for all"
+                                            />
+                                        </td>
+                                        <td
+                                            data-label="Percentage (in case of CGPA, convert it to percentage using the conversion formula)"
+                                        >
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                name="marks_10th"
+                                                placeholder="Enter Percentage (required for all)"
+                                            />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row" data-label="SNO.">2</td>
+                                        <td data-label="Degree Name">12th</td>
+                                        <td data-label="Board/University">
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                name="board_university_12th"
+                                                placeholder="Required for all"
+                                            />
+                                        </td>
+                                        <td
+                                            data-label="Percentage (in case of CGPA, convert it to percentage using the conversion formula)"
+                                        >
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                name="marks_12th"
+                                                placeholder="Enter Percentage (required for all)"
+                                            />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row" data-label="SNO.">3</td>
+                                        <td data-label="Degree Name">
+                                            Bachelor’s
+                                        </td>
+                                        <td data-label="Board/University">
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                name="board_university_bachelors"
+                                                placeholder="Required for Master’s and PhD applicants only"
+                                            />
+                                        </td>
+                                        <td
+                                            data-label="Percentage (in case of CGPA, convert it to percentage using the conversion formula)"
+                                        >
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                name="marks_bachelors"
+                                                placeholder="Enter Percentage (required for Master’s and PhD applicants only)"
+                                            />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row" data-label="SNO.">4</td>
+                                        <td data-label="Degree Name">
+                                            Master’s
+                                        </td>
+                                        <td data-label="Board/University">
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                name="board_university_masters"
+                                                placeholder="Required for PhD applicants only"
+                                            />
+                                        </td>
+                                        <td
+                                            data-label="Percentage (in case of CGPA, convert it to percentage using the conversion formula)"
+                                        >
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                name="marks_masters"
+                                                placeholder="Enter Percentage (required for PhD applicants only)"
+                                            />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row" data-label="SNO.">5</td>
+                                        <td data-label="Degree Name">
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                name="Add New"
+                                                placeholder="Add New"
+                                            />
+                                        </td>
+                                        <td data-label="Board/University">
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                name="board_university_masters"
+                                                placeholder="Required for PhD applicants only"
+                                            />
+                                        </td>
+                                        <td
+                                            data-label="Percentage (in case of CGPA, convert it to percentage using the conversion formula)"
+                                        >
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                name="marks_masters"
+                                                placeholder="Enter Percentage (required for PhD applicants only)"
+                                            />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- <button
+                                type="button"
+                                id="add-row"
+                                onclick="addNewRow()"
+                            >
+                                Add New
+                            </button> -->
+                            <!-- Submit Button -->
+                            <div class="col-12 text-center mt-3">
+                                <a
+                                    href="mode-of-program.html"
+                                    class="btn btn-danger"
+                                >
+                                    Previous
+                                </a>
+                                <button type="submit" class="btn btn-primary">
+                                    Save & Next
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <!-- Toast Notification -->
+        <div class="toast-container position-fixed top-0 end-0 p-3">
+            <div
+                id="courseToast"
+                class="toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+            >
+                <div class="toast-header bg-danger text-white">
+                    <strong class="me-auto">Course Selection</strong>
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="toast"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div class="toast-body fw-bold">
+                    You can only select up to 2 courses.
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-dark text-white py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="images/sau_log.png" alt="Logo" width="150" />
+                        <p class="mt-2">Your Company Tagline</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-white text-decoration-none"
+                                    >Home</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-white text-decoration-none"
+                                    >About</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-white text-decoration-none"
+                                    >Services</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-white text-decoration-none"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Follow Us</h5>
+                        <a href="#" class="text-white me-3"
+                            ><i class="bi bi-facebook"></i
+                        ></a>
+                        <a href="#" class="text-white me-3"
+                            ><i class="bi bi-twitter"></i
+                        ></a>
+                        <a href="#" class="text-white me-3"
+                            ><i class="bi bi-instagram"></i
+                        ></a>
+                        <a href="#" class="text-white"
+                            ><i class="bi bi-linkedin"></i
+                        ></a>
+                    </div>
+                </div>
+                <hr class="border-light" />
+                <p class="text-center mb-0">
+                    &copy; 2025 Your Company. All Rights Reserved.
+                </p>
+            </div>
+        </footer>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            function toggleSidebar() {
+                const sidebar = document.getElementById("sidebar");
+                const body = document.body;
+                sidebar.classList.toggle("show");
+                // body.classList.toggle("sidebar-open");
+            }
+        </script>
+        <!-- <script>
+            function addNewRow() {
+                var tableBody = document.getElementById("table-body");
+                var newRow = document.createElement("tr");
+
+                var rowCount = tableBody.rows.length + 1;
+
+                newRow.innerHTML = `
+            <td scope="row" data-label="SNO.">${rowCount}</td>
+            <td data-label="Degree Name">Add New</td>
+            <td data-label="Board/University">
+                <input type="text" name="board_university_add_new" placeholder="Optional" />
+            </td>
+            <td data-label="Percentage (in case of CGPA, convert it to percentage using the conversion formula)">
+                <input type="text" name="marks_add_new" placeholder="Enter Percentage (Optional)" />
+            </td>
+        `;
+
+                tableBody.appendChild(newRow);
+            }
+        </script> -->
+    </body>
+</html>

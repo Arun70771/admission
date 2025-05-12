@@ -1,0 +1,935 @@
+.name_info {
+    font-size: 12px;
+}
+
+.program_options {
+    font-size: 20px;
+}
+
+.custom_radio {
+    line-height: 27px;
+    margin-bottom: 0px;
+}
+/* .custom_radio  .ui-radio-inline{width:23%;} */
+.mobile_sec #mobile_dropdown, .mobile_sec .select2 {
+    width: 47% !important;
+    float: left;
+    margin-right: 20px;
+}
+
+.mobile_sec .input-group {
+    width: 50%;
+    float: left;
+}
+
+.landline_sec #landline_dropdown, .landline_sec .select2 {
+    width: 35% !important;
+    float: left;
+    margin-right: 16px;
+}
+
+.landline_sec .std_code_sec {
+    display: inline-block;
+    width: 10%;
+    float: left;
+    margin-right: 20px;
+}
+
+    .landline_sec .std_code_sec input {
+        padding-left: 5px;
+        font-size: 13px;
+    }
+
+.landline_sec .input-group {
+    width: 50%;
+    float: left;
+}
+
+.select_options select {
+    padding: 5px;
+}
+
+    .select_options select:focus {
+        box-shadow: 2px 2px 10px rgba(63, 81, 181, 0.22);
+    }
+
+.options_head {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+    .options_head label {
+        width: 10%;
+        float: left;
+        margin-right: 20px;
+    }
+
+    .options_head .course_name {
+        width: 20%;
+        float: left;
+        margin-right: 20px;
+        color: #888383;
+        font-weight: 500;
+    }
+
+    .options_head .btn-pink {
+        padding: 1px 10px;
+        margin-top: -3px;
+        color: #333;
+        background-color: #FFCC29;
+        border-color: rgba(51, 51, 51, 0.41);
+    }
+
+.ion-mobile:before {
+    content: "\f10b";
+    font-family: fontAwesome;
+}
+
+.ion-landline:before {
+    content: "\f095";
+    font-family: fontAwesome;
+}
+
+.main-container .nav-wrap .nav-head .site-logo > span.text {
+    top: 11px;
+    font-size: 16px;
+    line-height: 18px;
+    left: 40px;
+}
+
+.main-container .nav-wrap .nav-head {
+    padding-left: 13px;
+}
+
+.name_sec .xsmall {
+    margin-bottom: 0px;
+}
+
+.panel-default .panel-heading {
+    padding-bottom: 10px;
+}
+
+.passport_detail {
+    margin-top: 10px;
+}
+
+.address_detail {
+    background: #fff;
+    border: 1px solid rgba(96, 125, 139, 0.28);
+    padding: 10px 0px;
+    padding-top: 0px;
+    display: inline-block;
+    width: 100%;
+}
+
+    .address_detail h2 {
+        margin-top: 0px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10.5px;
+        color: #fff;
+        padding: 10px;
+        background-color: #607D8B;
+        font-size: 20px;
+    }
+
+    .address_detail p {
+        padding-left: 10px;
+        margin-bottom: 8px;
+    }
+
+    .address_detail .ui-checkbox-primary {
+        margin: 10px;
+    }
+
+.mandatory_option {
+    border-left: 1px solid red;
+}
+
+.address_section {
+    margin: 10px;
+    width: 95%;
+}
+
+.region_selector {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+    .region_selector input {
+        height: 31px;
+    }
+
+.document_upload p.upload_info {
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 0px;
+    margin-top: 7px;
+}
+
+.document_upload {
+    margin-bottom: 0px;
+}
+
+    .document_upload .control-label {
+        padding-top: 0px;
+    }
+
+.upload_btn {
+    margin-top: 10px;
+}
+
+.form_no {
+    color: #fff;
+    padding-right: 10px;
+}
+
+.options_head .btn-pink:hover, .options_head .btn-pink:focus, .options_head .btn-pink.focus, .options_head .btn-pink:active,
+.options_head .btn-pink.active, .options_head .open > .dropdown-toggle.btn-pink {
+    color: #333;
+    background-color: ##D6A50B;
+    border-color: #D6A50B;
+}
+
+.ion-form:before {
+    content: "\f15c";
+    font-family: fontAwesome;
+}
+
+.main-container .nav-wrap {
+    z-index: 999;
+}
+
+.form_no a > i {
+    display: none;
+}
+
+.side_navbar i.ion {
+    color: #fff;
+    font-size: 25px;
+    margin-left: 0px;
+    background-color: #00a8e1;
+    padding: 5px;
+}
+
+    .side_navbar i.ion:before {
+        margin-left: 0px;
+    }
+
+.addBtn {
+    margin-top: 10px;
+    clear: both;
+}
+
+.graduation_head {
+    padding: 15px;
+}
+
+    .graduation_head .panel-primary {
+        margin-top: 10px;
+    }
+
+    .graduation_head .panel-body {
+        padding: 10px;
+    }
+
+        .graduation_head .panel-body .col-md-2 {
+            width: 20%;
+        }
+
+.graduation_info {
+    border: 1px solid #CCC;
+    padding-bottom: 10px;
+}
+
+.delete_edit_btn {
+    margin-top: 10px;
+    clear: both;
+}
+/* .graduationInfo{margin-top: 5px;} */
+.resultBtn {
+    text-align: center;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    margin-bottom: 0px;
+    padding: 2px 10px 0px 10px;
+}
+
+.ok-indicator {
+    position: absolute;
+    right: 5px;
+    top: 25px;
+}
+
+.imgphoto1 {
+    position: relative;
+    width: 250px;
+    height: 350px;
+}
+
+.change {
+    position: relative;
+    width: 595px;
+    height: 850px;
+}
+.sweet-overlay {z-index:11000!important;}
+.sweet-alert {z-index:11000!important;}
+.popupback { width:100%; height:100%; background:rgba(0,0,0,0.8); position:fixed; left:0px; top:0px; z-index:10000;}
+            .popupback .innerbox { width:100%; height:100%; display:flex; align-items:center; justify-content:center;
+            }
+                .popupback .innerbox .panel-body { width:400px; background:#fff; border-radius:6px; position:relative;}
+                    .popupback .innerbox .panel-body .closebtn { position:absolute; right:-16px; top:-15px; border-radius:50%; background:#b90f0f; color:#fff; padding:4px 10px;
+                    }
+
+
+@media (max-width:1200px) {
+    /* .custom_radio  .ui-radio-inline{width:31%;} */
+}
+
+@media (max-width:991px) {
+    .document_upload .control-label {
+        font-size: 13px;
+    }
+
+    .document_upload p.upload_info {
+        font-size: 11px;
+    }
+
+    .address_head {
+        margin-bottom: 10px;
+    }
+
+    .name_sec .col-md-9 .input-group {
+        margin-top: 8px;
+    }
+
+    .options_head label {
+        width: 16%;
+    }
+
+    .options_head .course_name {
+        width: 29%;
+    }
+
+    .landline_sec #landline_dropdown, .landline_sec .select2 {
+        width: 29% !important;
+    }
+
+    .landline_sec .std_code_sec {
+        width: 17%;
+    }
+
+    .mobile_sec #mobile_dropdown, .mobile_sec .select2 {
+        width: 50% !important;
+    }
+
+    .mobile_sec .input-group, .landline_sec .input-group {
+        width: 45%;
+    }
+
+    .graduation_head .panel-body .col-md-2 {
+        width: 50%;
+        margin-bottom: 5px;
+        float: left;
+    }
+
+    .fillDetail {
+        width: 50%;
+        float: left;
+        margin-bottom: 10px;
+    }
+
+    .form_no {
+        display: inline-block;
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        background-color: rgb(63, 81, 181);
+        width: 100%;
+        padding: 2px 5px;
+        text-align: center;
+        border-top: 1px solid rgba(204, 204, 204, 0.3);
+        border-bottom: 1px solid rgba(204, 204, 204, 0.3);
+    }
+
+        .form_no a {
+            float: right;
+            margin-right: 0px !important;
+        }
+
+            .form_no a > i {
+                font-size: 12px !important;
+                margin-right: 10px;
+            }
+
+    .resultBtn {
+        text-align: left;
+    }
+}
+
+@media (max-width:767px) {
+    .custom_radio .ui-radio-inline {
+        width: 27%;
+    }
+
+    .options_head label {
+        width: 20%;
+    }
+
+    .options_head .course_name {
+        width: 35%;
+    }
+}
+
+@media (max-width:480px) {
+    .fillDetail, .graduation_head .panel-body .col-md-2 {
+        width: 100%;
+    }
+
+    .page-dashboard .dash-head.basic_detail_head {
+        margin-top: 20px;
+    }
+
+    .site-head ul.left-elems > li > .site-logo > a img {
+        width: 90%;
+    }
+
+    .mobile_sec #mobile_dropdown, .mobile_sec .select2 {
+        margin-bottom: 10px;
+    }
+
+    .landline_sec #landline_dropdown, .landline_sec .select2, .landline_sec .std_code_sec {
+        margin-bottom: 10px;
+    }
+
+    #login_btn {
+        box-shadow: none;
+    }
+
+    #app.off-canvas .main-container .nav-wrap {
+        margin-top: 80px;
+    }
+
+    .main-container .nav-wrap .nav-head {
+        display: none;
+    }
+
+    .main-container .nav-wrap .site-nav {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width:360px) {
+    .delete_edit_btn button {
+        padding: 5px 8px;
+    }
+
+    .fillDetail .form-control {
+        font-size: 13px;
+        padding-left: 3px;
+    }
+
+    .mandatory_msg .alert-danger {
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+
+    .mandatory_msg button {
+        font-size: 16px;
+        top: 2px;
+    }
+
+    .mandatory_msg .msg {
+        font-size: 10.5px;
+    }
+
+    .options_head label {
+        width: 29%;
+        margin-right: 5px;
+    }
+
+    .options_head .course_name {
+        width: 67%;
+        margin-right: 0px;
+    }
+
+    .options_head .btn-pink {
+        float: left;
+        margin-top: 5px;
+        margin-bottom: 18px;
+        width: 41%;
+    }
+
+    .mobile_sec #mobile_dropdown, .mobile_sec .select2 {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+
+    .mobile_sec .input-group, .landline_sec .input-group {
+        width: 100%;
+    }
+
+    .landline_sec #landline_dropdown, .landline_sec .select2 {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+
+    .landline_sec .std_code_sec {
+        width: 100%;
+        font-size: 12px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .mobile_sec .input-group, .landline_sec .input-group {
+        width: 100%;
+    }
+
+    .basic_detail_head .mt10 {
+        float: none;
+        display: inline-block;
+        margin-top: 3px;
+    }
+
+        .basic_detail_head .mt10 p.small {
+            margin-bottom: 0px;
+            font-size: 12px;
+        }
+
+    .basic_detail_head .left {
+        width: 100%;
+    }
+
+        .basic_detail_head .left h4 {
+            margin-bottom: 0px;
+            margin-top: 0px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+    .page-dashboard .dash-head.basic_detail_head {
+        padding: 5px 10px;
+    }
+
+    .program_options {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .select_option_head {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+        .select_option_head .select_options select {
+            width: 100%;
+        }
+
+    .region_selector {
+        margin-bottom: 0px;
+    }
+
+    .address_detail h2 {
+        font-size: 18px;
+    }
+
+    .address_detail p {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .physical_standard {
+        width: 100%;
+    }
+
+        .physical_standard select {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+    .document_upload .control-label {
+        font-size: 12px;
+    }
+
+    .upload_btn {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 768px) {
+    .form-horizontal .control-label {
+        text-align: left;
+    }
+}
+
+
+.contact-campuses .col-md-3 {
+    border: 1px solid #eee;
+    margin: 8px;
+    min-width: 30%;
+}
+
+.loading {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1111110;
+    background-color: rgba(35, 44, 115, 0.5);
+    background: rgba(35, 44, 115, 0.5);
+    color: rgba(35, 44, 115, 0.5);
+}
+
+    .loading img {
+        position: absolute;
+        left: 30%;
+        top: 20%;
+        width: 50%;
+    }
+
+@media only screen and (max-width:640px) {
+    .loading img {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        width: 100%;
+    }
+
+    .loading {
+        display: none;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        z-index: 1111110;
+        background-color: rgba(35, 44, 115, 0.5);
+        background: rgba(35, 44, 115, 0.5);
+        color: rgba(35, 44, 115, 0.5);
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .loading img {
+        position: absolute;
+        left: 0%;
+        top: 10%;
+        width: 100%;
+    }
+
+    .loading {
+        display: none;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        z-index: 1111110;
+        background-color: rgba(35, 44, 115, 0.5);
+        background: rgba(35, 44, 115, 0.5);
+        color: rgba(35, 44, 115, 0.5);
+    }
+}
+
+ #dialog {
+            overflow: auto;
+            font-size: 10pt !important;
+            font-weight: normal !important;
+            margin: 10px;
+        }
+
+            #dialog div {
+                margin-bottom: 15px;
+            }
+
+        .btnnew {
+            border: none;
+            outline: none;
+            padding: 7px 0px;
+            background-color: #183e65;
+            cursor: pointer;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 600;
+            width: 41.8%;
+            color: #fff;
+            text-align: center;
+        }
+
+            .active, .btnnew:hover {
+                background-color: #e9f5ff;
+                color: #183e65;
+            }
+
+        #myDIV {
+            text-align: right;
+            padding-top: 10px;
+        }
+
+    
+
+@media only screen and (max-width:320px) {
+    .loading img {
+        position: absolute;
+        left: 0%;
+        top: 35%;
+        width: 100%;
+    }
+
+    .loading {
+        display: none;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        z-index: 1111110;
+        background-color: rgba(35, 44, 115, 0.5);
+        background: rgba(35, 44, 115, 0.5);
+        color: rgba(35, 44, 115, 0.5);
+    }
+     .btnnew {
+                width: 49.5%;
+            }
+
+            .meeta-hero-section-4 .hero-form {
+                margin-top: 0px;
+            }
+    .cropit-preview-background-container img {
+        width: 50%;
+    }
+
+    .imgphoto1 {
+        width: 235px;
+    }
+
+    #DivPhoto .cropit-preview {
+        background-color: #f8f8f8;
+        background-size: cover;
+        border: 5px solid #ccc;
+        border-radius: 3px;
+        margin-top: 7px;
+        width: 226px !important;
+        height: 350px;
+        left: -15PX;
+        position: relative;
+    }
+
+    .cropit-preview-image-container img {
+        width: 50%;
+    }
+
+    .change {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    #DivXmarksheet .document_upload img {
+        width: 100%;
+        height: auto;
+    }
+
+    #DivXmarksheet .cropit-preview {
+        width: 100% !important;
+        height: 400px;
+    }
+}
+
+
+/* for nav to dropdown*/
+
+@media only screen and (max-width: 800px) {
+    /* Force table to not be like tables anymore */
+    #no-more-tables table,
+    #no-more-tables thead,
+    #no-more-tables tbody,
+    #no-more-tables th,
+    #no-more-tables td,
+    #no-more-tables tr {
+        display: block;
+    }
+        /* Hide table headers (but not display: none;, for accessibility) */
+        #no-more-tables thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+    #no-more-tables tr {
+        border: 1px solid #ccc;
+    }
+
+    #no-more-tables td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        white-space: normal;
+        text-align: left;
+    }
+
+        #no-more-tables td:before {
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            top: 6px;
+            left: 6px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+            text-align: left;
+            font-weight: bold;
+        }
+        /*
+        Label the data
+        */
+        #no-more-tables td:before {
+            content: attr(data-title);
+        }
+}
+
+
+
+.checkbox {
+    display:inline-flex;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: small;
+    align-items:center;
+    margin:0px 10px 0px 0px;
+    align-items: flex-start;
+}
+    .checkbox span {  margin:0px 0px 0px 15px!important; position:relative;z-index:2; line-height: 24pt;}
+    .checkbox input {position:relative; z-index:5; border:0px; opacity:0;margin: 9px 0px 0px 0px;}
+
+
+
+.checkbox span:before {   
+content: "";
+    width: 20px;
+    height: 20px;
+    top: 6px;
+    left: -31px;
+    border-radius:50%;
+    border: 2px solid #919191;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+    background-color: #ffffff;                
+    position:absolute;
+    display:block;
+     }
+
+.checkbox span:after {   
+content: "";
+    width: 10px;
+    height: 10px;
+    top: 11px;
+    left: -26px;
+    border-radius:50%;    
+    box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+    background-color: #6a6a6a;                
+    position:absolute;
+    display:none;
+     }
+
+
+.checkbox input:checked + span:after {
+    display:block;        
+}
+
+
+    .addscroll {
+        overflow-y:scroll;
+        height:200px;;        
+    }
+
+    #ui-datepicker-div {
+            border: 1px solid #dfdfdf;
+            box-shadow: 0px 0px 10px 0px #cfcfcf;
+            z-index: 9999 !important;
+        }
+
+        .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+            border: none;
+            /* background: #dadada url(images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x; */
+            font-weight: normal;
+            color: #212121;
+            background: #ffcc29 !important;
+        }
+
+        .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+            border: none;
+            color: #183e65;
+            font-weight: 600;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0px 0px 3px 0px #cfcfcf;
+            background: #fff;
+        }
+
+        .ui-datepicker .ui-datepicker-header {
+            background: #ffcc29;
+            border: none;
+        }
+
+        .ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+            width: 45%;
+            border: 1px solid #c3c3c3;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .ui-datepicker .ui-datepicker-next {
+            right: 0px;
+        }
+
+        .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+            position: absolute;
+            top: 1px;
+            width: 1.8em;
+            height: 1.8em;
+        }
+
+        .ui-datepicker .ui-datepicker-prev-hover {
+            left: 0px;
+        }
+
+        .ui-datepicker .ui-datepicker-prev {
+            left: 0px;
+        }
+
+        .ui-datepicker table {
+            width: 100%;
+            font-size: .9em;
+            border-collapse: collapse;
+            font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: 0 0 0.4em;
+        }
+
+        .ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+            width: 45%;
+            border: 1px solid #c3c3c3;
+            border-radius: 5px;
+            font-size: 14px;
+            font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        .ui-datepicker table {
+            font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background: #fffef1;
+        }
+
+        .ui-datepicker td {
+            border: 0;
+            padding: 4px;
+        }
+
+.sectionname {
+    float: none !important;
+}
+.cuteMarks input {
+        width: 100px !important;
+    display: inline-block !important;
+}
+
+@media(min-width:0px) and (max-width:767px) {
+
+    .popupback .innerbox .panel-body { width:80%;
+    }
+
+}

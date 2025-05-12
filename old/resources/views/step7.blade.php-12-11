@@ -1,0 +1,138 @@
+@extends('layouts.main')
+@section('content')
+
+         <!-- content-here -->
+         <div class="content-container" id="content">
+            <!-- dashboard page -->
+            <div class="page page-dashboard">
+               <style>
+                  .passport_detail, .suspended, .chronic_ailment {
+                  display: none;
+                  }
+               </style>
+               <style>
+                  .C_list {
+                  height: 210px;
+                  overflow: auto;
+                  }
+                  .form-horizontal .form-group {
+                  margin-left: 0;
+                  margin-right: 0;
+                  }
+                  .checkbox1 {
+                  position: relative;font-weight: normal;
+                  cursor: pointer;user-select: none;font-family: Arial,Helvetica,sans-serif;
+                  font-size: small;    line-height: 27px;letter-spacing: .5px;    margin-right: 20px;
+                  }
+                  .checkbox1:before {
+                  content: "";
+                  width: 20px;
+                  height: 20px;
+                  top: -7px;
+                  left: -3.9px;
+                  border: 2px solid #919191;
+                  box-shadow: 0 1px 1px rgb(0 0 0 / 5%); position:absolute;    border-radius: 100%;
+                  background-color: #ffffff;
+                  }
+                  .checkbox1:after {
+                  content: "";
+                  width: 10px;
+                  height: 10px;
+                  border-radius: 100%;
+                  top: 6px;
+                  left: 5px;
+                  background: #6a6a6a;
+                  }
+               </style>
+               <div class="page-wrap">
+             
+               <div class="col-xs-12">
+     
+               <div class="panel panel-default panel-hovered panel-stacked mb30">
+
+               @if ($errors->any())
+                     <div class="alert alert-danger">
+                        <ul>
+                           @foreach ($errors->all() as $error)
+                              <li>{{ $error }}</li>
+                           @endforeach         
+                        </ul>
+                     </div>
+                     @endif
+			
+                @if( Session::has( 'success' ))
+                    <div class="alert alert-success">{{ Session::get( 'success' ) }}</div>
+                @elseif( Session::has( 'warning' ))
+                    <div class="alert alert-danger">{{ Session::get( 'warning' ) }} </div>
+                @endif   
+
+
+
+            
+               <form role="form" class="form-horizontal" id="personalform" method="post" action="{{url('insert7')}}">
+                  @csrf
+
+               <div class="panel-body">
+                <ol>
+                    <li>Your Application Form No is : <span id="formno"> <b>SAU-A&E-2025-26-{{Session::get('user')->id}}</b></span></li>     
+                  
+                </ol>
+               
+                  
+                    <div class="md-checkbox md-primary terms_condition">
+                        <label>
+                            <input type="checkbox" id="chkConfirm" name="chkConfirm" value="1" checked>
+                            <span>I hereby certify that the information given in the Application Form is complete and accurate.</span>
+                        </label>
+                    </div>
+                    <br>
+                    <br>
+		    <div class="alert alert-info" role="alert" style="max-width: 60%; margin-top: 2rem;">
+                        Please pay the registration fee of USD20 by clicking the payment link below. The payment link will open in a new window. Once you have completed the payment, please make a note of the Transaction ID and come back to this window and enter the Transaction ID in the text box provided below.
+                    </div>
+                    <div role="form" class="form-horizontal">
+                            <a class="btn btn-primary mr5 waves-effect" href="https://formbuilder.ccavenue.com/live/icici-bank/south-asian-university/student-fee-collection-national-international" target="_blank">
+                                Pay Registration Fee ($20)
+                            </a>
+		    </div>
+		    
+		    <a href="https://eazypay.icicibank.com/EazyPG?merchantid=386070&mandatory+fields=JBDf0llA6k0FrwezYmVSthlwrQhJwLG0RyTEM2CD5UI=&optional+fields=J+RbNdESqotiuwk2J+za2g==&returnurl=e/1Q+khLPFRNNDPLEcR5b7zEZZQcr9i7RlCpWJ13bh0=&Reference+No=kQhpVdZkwG+ITb0UbJFU3g==&submerchantid=1gwa1yHErEBavYp8MqJQIg==&transaction+amount=FCenB8vfZPTAEn9CK9TA+w==&paymode=xGOaN71YcWRF+gVR7+Lldw==" style="display: none">Pay Now</a>
+
+                    <br>
+                    
+                    <div class="form-group col-md-6">
+                        <label class="col-md-5 control-label">Tracking ID	 <span class="text-danger">*</span></label>
+                        <div class="col-md-7">  
+                            <input type="text" pattern="^[A-Za-z0-9]{12}$" title="Tracking ID must be exactly 12 alphanumeric characters." class="form-control" name="tracking_id" value="{{ ($data->tracking_id) ? $data->tracking_id : old('tracking_id') }}" >
+                        </div>
+                    </div>  
+              
+                    
+                    
+                    <div role="form" class="form-horizontal">
+                            <button class="btn btn-primary mr5 waves-effect" type="submit" id="btnContinueFinish">Finish</button>
+                    </div>
+		    <div class="alert alert-info" role="alert" style="max-width: 60%; margin-top: 2rem;">
+                        <p><strong>Note After entering Transaction ID</strong></p>
+                        Your data has been submitted and you will be notified once it is verified
+                    </div>
+
+                </form> 
+
+            </div>
+        </div>
+    </div>
+                 
+               </div>
+              
+               <!-- Start date end 28022017-->
+            </div>
+            <!-- #end dashboard page -->
+         </div>
+      </div>
+      <!-- #end main-container -->
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+
+      @endsection
